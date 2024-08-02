@@ -1,0 +1,196 @@
+#blur-bg {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    z-index: 100;
+}
+
+.sidebar {
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 240px;
+    background-color:rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: gray;
+}
+
+.sidebar-header {
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.protab-menu {
+    height: 20px;
+    margin-right: 24px;
+    margin-left: 24px;    
+}
+
+.protab-yt-logo {
+    height: 100px;
+}
+
+.scrollbar {
+    overflow: auto;
+    visibility: hidden;
+    padding: 12px 12px 0px 10px;
+}
+
+.scrollbar div ,
+.scrollbar:hover{
+    visibility: visible;
+}
+
+.tabs {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding:9px 14px;
+    padding-right: 5px;
+    margin-bottom: 2px;
+}
+
+#tab-s {
+    padding-left: 12px;
+}
+
+#selected-tab {
+    background-color:rgb(40, 40, 40);    
+}
+
+#selected-tab:hover {
+    background-color:rgb(67, 67, 67); 
+}
+
+
+.tabs:hover {
+    background-color:rgb(40, 40, 40);
+}
+.tabs img {
+    width: 24px;
+    margin-right: 22px;
+}
+
+#subscription-img {
+    width: 30px;
+    margin-right: 18px;
+}
+#you-img {
+    width: 25px;
+}
+#history-img {
+    width: 22px;
+}
+
+
+.tabs div {
+    color: white;
+    font-size: 14px;
+}
+.tabs .headg {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#Signin {
+    margin-left: 12px;
+    line-height: 18px;
+}
+
+.sections {
+    border-bottom: 1px solid rgb(67, 67, 67);
+    padding-top:14px;
+    padding-bottom:14px;
+}
+
+#login-tab {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login-button {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    width: 75px;
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: rgba(0, 174, 255, 0.3);
+}
+
+
+.login-button img {
+    height: 34px;
+    width: 22px;
+    margin-right: 8px;
+}
+
+.login-button div {
+    color: rgb(0, 174, 255);
+    font-size: 15px;
+}
+
+.tabs .login-button {
+    margin-top: 15px;
+    margin-left: -60px;
+}
+
+
+#message p{
+    color: rgb(170, 170, 170);
+    margin-bottom: 15px;
+    font-size: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+    word-spacing: 8px;
+    line-height: 18px;
+}
+
+#message #crm {
+    color: rgb(113, 113, 113);
+    font-size: 12px;
+    margin-left:24px;
+    margin-bottom: 10px;
+}
+
+#subs .tabs {
+    position: relative;
+    
+}
+
+.sbcp {
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.tabs .end {
+    width: 20px;
+    position: absolute;
+    margin: 0;
+    top: 12px;
+    right:12px;
+}
+
+.tabs #arrow {
+    width: 20px;
+    opacity: 0.8;
+}

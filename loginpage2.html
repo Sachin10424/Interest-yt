@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube clone Login</title>
+</head>
+<body>
+    <div class="popup">
+        <div class="google-login">
+            <div class="left-section">
+                <img src="Images/Logo/google-color-svgrepo-com.svg" alt="google-logo">
+                <div class="welcome">Welcome</div>
+                <div class="gmail-container">
+                    <div class="gmail">
+                        <img src="Images/Symbols/account2.svg" alt="user">
+                        <div>cudraofficial@gmail.com</div>
+                        <img src="Images/Symbols/dropdown-svgrepo-com.svg" alt="dropdown">
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="container">
+                    <div class="entryarea">
+                        <input type="password" required>
+                        <div class="labelline">Enter your password</div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div id="show-password">
+                        <input type="checkbox" id="show-password-checkbox">
+                        <label for="show-password-checkbox">Show password</label>
+                    </div>
+                </div>
+                <div id="buttons">
+                    <a id="forgot-password" href="#">Forgot password?</a>
+                    <button id="next">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="extra-features">
+            <div id="language">
+                <select name="language" id="language-select">
+                    <!-- Language options here -->
+                </select>
+            </div>
+            <div id="hpt">
+                <div>Help</div>
+                <div>Privacy</div>
+                <div>Terms</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('show-password-checkbox').addEventListener('change', function() {
+            const input = document.querySelector('.entryarea input');
+            if (this.checked) {
+                input.type = 'text';
+            } else {
+                input.type = 'password';
+            }
+        });
+    </script>
+</body>
+</html>
